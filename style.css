@@ -5,26 +5,36 @@
 nav{
     
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* align-items: center; */
     /* justify-content: space-between; */
     /* padding: 1vh 2vw; */
-    padding-top: 20px;
+    padding-top: 3%;
     padding-left: 5%;
     padding-right: 30%;
+
 }
 
-nav ul li{
+
+nav ul {
     list-style-type: none;
-    display: inline-block;
-    padding: 1vh 2vw;
-    padding-top: 5%;
+    display: flex;
+    /* display: inline-block; */
+    padding: 1vh 4vw;
+    padding-top: 3%;
+    width: 550px;
+}
+nav ul li{
+    padding: 0vh 1vw;
+    
 }
 nav ol li{
     list-style-type: none;
     display: inline-block;
     padding: 1vh 2vw;
     /* padding: 10px 20px; */
+    
+    
 }
 nav ul li a{
     color: rgb(3, 19, 32);
@@ -58,7 +68,7 @@ section{
     
     margin: 0vh 5vw;
     padding-top: 1%;
-    /* margin-right: 350px; */
+    
     /* display: inline-block; */
     /* justify-content: center; */
     /* justify-content: space-around; */
@@ -67,13 +77,6 @@ section{
 section div{
     border: 1px solid black;
     box-sizing: border-box;
-   
-    
-    /* margin: 25%; */
-    /* padding: 1%; */
-    /* height: 80%; */
-    /* background-color: #f9f4f4; */
-    
     margin: 0vh 1vw;
     /* width: 20vw; */
     padding: 2%;
@@ -84,7 +87,9 @@ img{
     
 }
 .navbar_logo{
-    width: 15%;
+    width: 20%;
+    min-width: 100px;
+
     
 }    
 
@@ -95,6 +100,7 @@ div h4{
 .paragraphe p{
     padding-top: 15px;
 }
+
 @media only screen and (max-width: 550px){
     .navbar_logo{
         margin-left: 60%;
@@ -109,19 +115,19 @@ div h4{
         display: flex;
         width: 550px; /* 100%??*/
         margin-top: 5%;
+        padding-left: 1%;
+      
         
     }
     nav ul li{
         border: 1px solid black;
         padding:2vh 2vw;
         /* 5vw */
-        
-        
     }
     nav ol {
-        display: flex;
-         
+        display: flex; 
     }
+    
     nav ol li{
         align-items: center;
         font-size: 14px;
@@ -135,10 +141,6 @@ div h4{
        
     }
 
-    
-     /* nav{ 
-        font-size: 80%;
-        /* width: 100%; */
  
     .paragraphe {
         width:80%;
@@ -151,4 +153,13 @@ div h4{
     img{
         margin-left: 20%;
     }
-}  
+    nav{
+        flex-wrap: wrap;
+    }
+} 
+
+@media print{
+    nav ul li{
+        display: none;
+    }
+}
